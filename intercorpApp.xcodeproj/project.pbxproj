@@ -7,19 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A30363D3271A21D00000A5A4 /* IntercorpAppInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D2271A21D00000A5A4 /* IntercorpAppInteractor.swift */; };
+		A30363D5271A21F70000A5A4 /* IntercorpAppPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D4271A21F70000A5A4 /* IntercorpAppPresenter.swift */; };
+		A30363D7271A22060000A5A4 /* IntercorpAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D6271A22060000A5A4 /* IntercorpAppRouter.swift */; };
+		A30363D9271A223D0000A5A4 /* IntercorpAppProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D8271A223D0000A5A4 /* IntercorpAppProtocols.swift */; };
 		A3D2083A271A1D47000D3296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D20839271A1D47000D3296 /* AppDelegate.swift */; };
 		A3D2083C271A1D47000D3296 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2083B271A1D47000D3296 /* SceneDelegate.swift */; };
-		A3D2083E271A1D47000D3296 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2083D271A1D47000D3296 /* ViewController.swift */; };
+		A3D2083E271A1D47000D3296 /* IntercorpAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2083D271A1D47000D3296 /* IntercorpAppView.swift */; };
 		A3D20841271A1D47000D3296 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D2083F271A1D47000D3296 /* Main.storyboard */; };
 		A3D20843271A1D4A000D3296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3D20842271A1D4A000D3296 /* Assets.xcassets */; };
 		A3D20846271A1D4A000D3296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D20844271A1D4A000D3296 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A30363D2271A21D00000A5A4 /* IntercorpAppInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpAppInteractor.swift; sourceTree = "<group>"; };
+		A30363D4271A21F70000A5A4 /* IntercorpAppPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpAppPresenter.swift; sourceTree = "<group>"; };
+		A30363D6271A22060000A5A4 /* IntercorpAppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpAppRouter.swift; sourceTree = "<group>"; };
+		A30363D8271A223D0000A5A4 /* IntercorpAppProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpAppProtocols.swift; sourceTree = "<group>"; };
 		A3D20836271A1D47000D3296 /* intercorpApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intercorpApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D20839271A1D47000D3296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3D2083B271A1D47000D3296 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A3D2083D271A1D47000D3296 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3D2083D271A1D47000D3296 /* IntercorpAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpAppView.swift; sourceTree = "<group>"; };
 		A3D20840271A1D47000D3296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A3D20842271A1D4A000D3296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3D20845271A1D4A000D3296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,8 +64,8 @@
 		A3D20838271A1D47000D3296 /* intercorpApp */ = {
 			isa = PBXGroup;
 			children = (
-				A3D20854271A1DB3000D3296 /* LaunchScreen */,
 				A3D20842271A1D4A000D3296 /* Assets.xcassets */,
+				A3D20854271A1DB3000D3296 /* LaunchScreen */,
 				A3D20853271A1D81000D3296 /* Common */,
 				A3D20852271A1D78000D3296 /* Protocols */,
 				A3D20851271A1D73000D3296 /* Router */,
@@ -72,7 +80,7 @@
 		A3D2084D271A1D57000D3296 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A3D2083D271A1D47000D3296 /* ViewController.swift */,
+				A3D2083D271A1D47000D3296 /* IntercorpAppView.swift */,
 				A3D2083F271A1D47000D3296 /* Main.storyboard */,
 			);
 			path = View;
@@ -81,6 +89,7 @@
 		A3D2084E271A1D5E000D3296 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				A30363D2271A21D00000A5A4 /* IntercorpAppInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -88,6 +97,7 @@
 		A3D2084F271A1D65000D3296 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				A30363D4271A21F70000A5A4 /* IntercorpAppPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -102,6 +112,7 @@
 		A3D20851271A1D73000D3296 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				A30363D6271A22060000A5A4 /* IntercorpAppRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -109,6 +120,7 @@
 		A3D20852271A1D78000D3296 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				A30363D8271A223D0000A5A4 /* IntercorpAppProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -202,7 +214,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A3D2083E271A1D47000D3296 /* ViewController.swift in Sources */,
+				A30363D5271A21F70000A5A4 /* IntercorpAppPresenter.swift in Sources */,
+				A30363D7271A22060000A5A4 /* IntercorpAppRouter.swift in Sources */,
+				A3D2083E271A1D47000D3296 /* IntercorpAppView.swift in Sources */,
+				A30363D3271A21D00000A5A4 /* IntercorpAppInteractor.swift in Sources */,
+				A30363D9271A223D0000A5A4 /* IntercorpAppProtocols.swift in Sources */,
 				A3D2083A271A1D47000D3296 /* AppDelegate.swift in Sources */,
 				A3D2083C271A1D47000D3296 /* SceneDelegate.swift in Sources */,
 			);
