@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let viewController = IntercorpAppRouter.createIntercorpAppModule()
     window?.rootViewController = viewController
     window?.makeKeyAndVisible()
+    
+    // Firebase
+    FirebaseApp.configure()
     return true
   }
 }
