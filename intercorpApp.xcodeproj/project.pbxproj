@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A1FC8F1BDBBD107E2C39DB1 /* Pods_intercorpApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47CA80144BDC51988C66ACD3 /* Pods_intercorpApp.framework */; };
 		A30363D3271A21D00000A5A4 /* IntercorpAppInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D2271A21D00000A5A4 /* IntercorpAppInteractor.swift */; };
 		A30363D5271A21F70000A5A4 /* IntercorpAppPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D4271A21F70000A5A4 /* IntercorpAppPresenter.swift */; };
 		A30363D7271A22060000A5A4 /* IntercorpAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D6271A22060000A5A4 /* IntercorpAppRouter.swift */; };
 		A30363D9271A223D0000A5A4 /* IntercorpAppProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D8271A223D0000A5A4 /* IntercorpAppProtocols.swift */; };
+		A3BAEDBD271A3B7F00444839 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3BAEDBC271A3B7F00444839 /* GoogleService-Info.plist */; };
 		A3D2083A271A1D47000D3296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D20839271A1D47000D3296 /* AppDelegate.swift */; };
 		A3D2083C271A1D47000D3296 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2083B271A1D47000D3296 /* SceneDelegate.swift */; };
 		A3D2083E271A1D47000D3296 /* IntercorpAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2083D271A1D47000D3296 /* IntercorpAppView.swift */; };
@@ -20,10 +22,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1EF56F0CDCF75D8BD59CA884 /* Pods-intercorpApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intercorpApp.debug.xcconfig"; path = "Target Support Files/Pods-intercorpApp/Pods-intercorpApp.debug.xcconfig"; sourceTree = "<group>"; };
+		3046C8B90BE924EDD0ADC615 /* Pods-intercorpApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intercorpApp.release.xcconfig"; path = "Target Support Files/Pods-intercorpApp/Pods-intercorpApp.release.xcconfig"; sourceTree = "<group>"; };
+		47CA80144BDC51988C66ACD3 /* Pods_intercorpApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intercorpApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A30363D2271A21D00000A5A4 /* IntercorpAppInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpAppInteractor.swift; sourceTree = "<group>"; };
 		A30363D4271A21F70000A5A4 /* IntercorpAppPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpAppPresenter.swift; sourceTree = "<group>"; };
 		A30363D6271A22060000A5A4 /* IntercorpAppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpAppRouter.swift; sourceTree = "<group>"; };
 		A30363D8271A223D0000A5A4 /* IntercorpAppProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpAppProtocols.swift; sourceTree = "<group>"; };
+		A3BAEDBC271A3B7F00444839 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3D20836271A1D47000D3296 /* intercorpApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intercorpApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D20839271A1D47000D3296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3D2083B271A1D47000D3296 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A1FC8F1BDBBD107E2C39DB1 /* Pods_intercorpApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +57,8 @@
 			children = (
 				A3D20838271A1D47000D3296 /* intercorpApp */,
 				A3D20837271A1D47000D3296 /* Products */,
+				BAA6DC0304895A7AA632FCCD /* Pods */,
+				CE860F15706A45B8B4FEECC4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +137,7 @@
 		A3D20853271A1D81000D3296 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				A3BAEDBC271A3B7F00444839 /* GoogleService-Info.plist */,
 				A3D20847271A1D4A000D3296 /* Info.plist */,
 				A3D2083B271A1D47000D3296 /* SceneDelegate.swift */,
 				A3D20839271A1D47000D3296 /* AppDelegate.swift */,
@@ -143,6 +153,24 @@
 			path = LaunchScreen;
 			sourceTree = "<group>";
 		};
+		BAA6DC0304895A7AA632FCCD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1EF56F0CDCF75D8BD59CA884 /* Pods-intercorpApp.debug.xcconfig */,
+				3046C8B90BE924EDD0ADC615 /* Pods-intercorpApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE860F15706A45B8B4FEECC4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47CA80144BDC51988C66ACD3 /* Pods_intercorpApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -150,9 +178,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A3D2084A271A1D4A000D3296 /* Build configuration list for PBXNativeTarget "intercorpApp" */;
 			buildPhases = (
+				CC576DD439D526DC8C3944B1 /* [CP] Check Pods Manifest.lock */,
 				A3D20832271A1D47000D3296 /* Sources */,
 				A3D20833271A1D47000D3296 /* Frameworks */,
 				A3D20834271A1D47000D3296 /* Resources */,
+				353191BC0146A5CD2A502DF8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -201,6 +231,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3BAEDBD271A3B7F00444839 /* GoogleService-Info.plist in Resources */,
 				A3D20846271A1D4A000D3296 /* LaunchScreen.storyboard in Resources */,
 				A3D20843271A1D4A000D3296 /* Assets.xcassets in Resources */,
 				A3D20841271A1D47000D3296 /* Main.storyboard in Resources */,
@@ -208,6 +239,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		353191BC0146A5CD2A502DF8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-intercorpApp/Pods-intercorpApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-intercorpApp/Pods-intercorpApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-intercorpApp/Pods-intercorpApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC576DD439D526DC8C3944B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-intercorpApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A3D20832271A1D47000D3296 /* Sources */ = {
@@ -364,6 +437,7 @@
 		};
 		A3D2084B271A1D4A000D3296 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1EF56F0CDCF75D8BD59CA884 /* Pods-intercorpApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -392,6 +466,7 @@
 		};
 		A3D2084C271A1D4A000D3296 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3046C8B90BE924EDD0ADC615 /* Pods-intercorpApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
