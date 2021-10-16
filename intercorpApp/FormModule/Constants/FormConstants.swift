@@ -8,6 +8,5 @@
 import Foundation
 
 class FormConstants {
-  
-  let screenTitle: String = "Complete Form"
+  let screenTitle: String = "Form"
 }
