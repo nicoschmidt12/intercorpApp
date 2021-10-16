@@ -24,7 +24,7 @@ class AuthenticationInteractor: AuthenticationInteractorProtocol {
       case .success(granted: _, declined: _, token: let token):
         let credential = FacebookAuthProvider.credential(withAccessToken: token?.tokenString ?? String())
         Auth.auth().signIn(with: credential) { result, error in
-          // TODO - Go to form Module
+          self.presenter?.goToFormModule()
         }
       case .cancelled:
         break
