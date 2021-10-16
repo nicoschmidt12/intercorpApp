@@ -10,11 +10,11 @@ import FirebaseAuth
 import FBSDKLoginKit
 import UIKit
 
-class IntercorpAppInteractor: IntercorpAppInteractorProtocol {
+class AuthenticationInteractor: AuthenticationInteractorProtocol {
   
   // MARK: - Protocol properties
   
-  weak var presenter: IntercorpAppPresenterProtocol?
+  weak var presenter: AuthenticationPresenterProtocol?
   
   func loginWithFacebook(viewController: UIViewController) {
     let loginManager = LoginManager()

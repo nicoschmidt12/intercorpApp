@@ -7,7 +7,7 @@
 
 import UIKit
 
-class IntercorpAppView: UIViewController, IntercorpAppViewProtocol {
+class AuthenticationView: UIViewController, AuthenticationViewProtocol {
   
   // MARK: - Outlets
   
@@ -15,11 +15,11 @@ class IntercorpAppView: UIViewController, IntercorpAppViewProtocol {
   
   // MARK: - Protocol properties
   
-  var presenter: IntercorpAppPresenterProtocol?
+  var presenter: AuthenticationPresenterProtocol?
   
   // MARK: - Private properties
   
-  let constants: IntercorpAppConstants = IntercorpAppConstants()
+  let constants: AuthenticationConstants = AuthenticationConstants()
   
   // MARK: - Life Cycle
   

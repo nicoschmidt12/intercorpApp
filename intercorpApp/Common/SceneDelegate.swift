@@ -16,7 +16,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     guard let windowScene = (scene as? UIWindowScene) else { return }
     window?.windowScene = windowScene
     window?.makeKeyAndVisible()
-    IntercorpAppRouter().presentIntercorpAppModule(from: window)
+    AuthenticationRouter().presentAuthenticationModule(from: window)
   }
   
   func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {

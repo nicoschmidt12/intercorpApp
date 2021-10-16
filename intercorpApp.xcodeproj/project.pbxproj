@@ -8,17 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		9A1FC8F1BDBBD107E2C39DB1 /* Pods_intercorpApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47CA80144BDC51988C66ACD3 /* Pods_intercorpApp.framework */; };
-		A30363D3271A21D00000A5A4 /* IntercorpAppInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D2271A21D00000A5A4 /* IntercorpAppInteractor.swift */; };
-		A30363D5271A21F70000A5A4 /* IntercorpAppPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D4271A21F70000A5A4 /* IntercorpAppPresenter.swift */; };
-		A30363D7271A22060000A5A4 /* IntercorpAppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D6271A22060000A5A4 /* IntercorpAppRouter.swift */; };
-		A30363D9271A223D0000A5A4 /* IntercorpAppProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D8271A223D0000A5A4 /* IntercorpAppProtocols.swift */; };
+		A30363D3271A21D00000A5A4 /* AuthenticationInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D2271A21D00000A5A4 /* AuthenticationInteractor.swift */; };
+		A30363D5271A21F70000A5A4 /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D4271A21F70000A5A4 /* AuthenticationPresenter.swift */; };
+		A30363D7271A22060000A5A4 /* AuthenticationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D6271A22060000A5A4 /* AuthenticationRouter.swift */; };
+		A30363D9271A223D0000A5A4 /* AuthenticationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D8271A223D0000A5A4 /* AuthenticationProtocols.swift */; };
 		A3BAEDBD271A3B7F00444839 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3BAEDBC271A3B7F00444839 /* GoogleService-Info.plist */; };
 		A3BDF134271A9BB2001150D7 /* IntercorpAppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BDF133271A9BB2001150D7 /* IntercorpAppExtensions.swift */; };
-		A3CC8493271A75380080FBAC /* IntercorpAppConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC8492271A75380080FBAC /* IntercorpAppConstants.swift */; };
+		A3CC8493271A75380080FBAC /* AuthenticationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC8492271A75380080FBAC /* AuthenticationConstants.swift */; };
 		A3D2083A271A1D47000D3296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D20839271A1D47000D3296 /* AppDelegate.swift */; };
 		A3D2083C271A1D47000D3296 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2083B271A1D47000D3296 /* SceneDelegate.swift */; };
-		A3D2083E271A1D47000D3296 /* IntercorpAppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2083D271A1D47000D3296 /* IntercorpAppView.swift */; };
-		A3D20841271A1D47000D3296 /* IntercorpAppView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D2083F271A1D47000D3296 /* IntercorpAppView.storyboard */; };
+		A3D2083E271A1D47000D3296 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2083D271A1D47000D3296 /* AuthenticationView.swift */; };
+		A3D20841271A1D47000D3296 /* AuthenticationView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D2083F271A1D47000D3296 /* AuthenticationView.storyboard */; };
 		A3D20843271A1D4A000D3296 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3D20842271A1D4A000D3296 /* Assets.xcassets */; };
 		A3D20846271A1D4A000D3296 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3D20844271A1D4A000D3296 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -27,18 +27,18 @@
 		1EF56F0CDCF75D8BD59CA884 /* Pods-intercorpApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intercorpApp.debug.xcconfig"; path = "Target Support Files/Pods-intercorpApp/Pods-intercorpApp.debug.xcconfig"; sourceTree = "<group>"; };
 		3046C8B90BE924EDD0ADC615 /* Pods-intercorpApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intercorpApp.release.xcconfig"; path = "Target Support Files/Pods-intercorpApp/Pods-intercorpApp.release.xcconfig"; sourceTree = "<group>"; };
 		47CA80144BDC51988C66ACD3 /* Pods_intercorpApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intercorpApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		A30363D2271A21D00000A5A4 /* IntercorpAppInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpAppInteractor.swift; sourceTree = "<group>"; };
-		A30363D4271A21F70000A5A4 /* IntercorpAppPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpAppPresenter.swift; sourceTree = "<group>"; };
-		A30363D6271A22060000A5A4 /* IntercorpAppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpAppRouter.swift; sourceTree = "<group>"; };
-		A30363D8271A223D0000A5A4 /* IntercorpAppProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpAppProtocols.swift; sourceTree = "<group>"; };
+		A30363D2271A21D00000A5A4 /* AuthenticationInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationInteractor.swift; sourceTree = "<group>"; };
+		A30363D4271A21F70000A5A4 /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
+		A30363D6271A22060000A5A4 /* AuthenticationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRouter.swift; sourceTree = "<group>"; };
+		A30363D8271A223D0000A5A4 /* AuthenticationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationProtocols.swift; sourceTree = "<group>"; };
 		A3BAEDBC271A3B7F00444839 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3BDF133271A9BB2001150D7 /* IntercorpAppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpAppExtensions.swift; sourceTree = "<group>"; };
-		A3CC8492271A75380080FBAC /* IntercorpAppConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpAppConstants.swift; sourceTree = "<group>"; };
+		A3CC8492271A75380080FBAC /* AuthenticationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationConstants.swift; sourceTree = "<group>"; };
 		A3D20836271A1D47000D3296 /* intercorpApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intercorpApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D20839271A1D47000D3296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A3D2083B271A1D47000D3296 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A3D2083D271A1D47000D3296 /* IntercorpAppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpAppView.swift; sourceTree = "<group>"; };
-		A3D20840271A1D47000D3296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/IntercorpAppView.storyboard; sourceTree = "<group>"; };
+		A3D2083D271A1D47000D3296 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		A3D20840271A1D47000D3296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/AuthenticationView.storyboard; sourceTree = "<group>"; };
 		A3D20842271A1D4A000D3296 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A3D20845271A1D4A000D3296 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A3D20847271A1D4A000D3296 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,10 +64,23 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		A3BDF135271AAE56001150D7 /* AuthenticationModule */ = {
+			isa = PBXGroup;
+			children = (
+				A3D20852271A1D78000D3296 /* Protocols */,
+				A3D20851271A1D73000D3296 /* Router */,
+				A3D2084F271A1D65000D3296 /* Presenter */,
+				A3D2084E271A1D5E000D3296 /* Interactor */,
+				A3D2084D271A1D57000D3296 /* View */,
+				A3CC8491271A75200080FBAC /* Constants */,
+			);
+			path = AuthenticationModule;
+			sourceTree = "<group>";
+		};
 		A3CC8491271A75200080FBAC /* Constants */ = {
 			isa = PBXGroup;
 			children = (
-				A3CC8492271A75380080FBAC /* IntercorpAppConstants.swift */,
+				A3CC8492271A75380080FBAC /* AuthenticationConstants.swift */,
 			);
 			path = Constants;
 			sourceTree = "<group>";
@@ -93,17 +106,11 @@
 		A3D20838271A1D47000D3296 /* intercorpApp */ = {
 			isa = PBXGroup;
 			children = (
+				A3BDF135271AAE56001150D7 /* AuthenticationModule */,
 				A3BDF132271A9B9B001150D7 /* Extensions */,
-				A3CC8491271A75200080FBAC /* Constants */,
 				A3D20842271A1D4A000D3296 /* Assets.xcassets */,
 				A3D20854271A1DB3000D3296 /* LaunchScreen */,
 				A3D20853271A1D81000D3296 /* Common */,
-				A3D20852271A1D78000D3296 /* Protocols */,
-				A3D20851271A1D73000D3296 /* Router */,
-				A3D20850271A1D6B000D3296 /* Entity */,
-				A3D2084F271A1D65000D3296 /* Presenter */,
-				A3D2084E271A1D5E000D3296 /* Interactor */,
-				A3D2084D271A1D57000D3296 /* View */,
 			);
 			path = intercorpApp;
 			sourceTree = "<group>";
@@ -111,8 +118,8 @@
 		A3D2084D271A1D57000D3296 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A3D2083D271A1D47000D3296 /* IntercorpAppView.swift */,
-				A3D2083F271A1D47000D3296 /* IntercorpAppView.storyboard */,
+				A3D2083D271A1D47000D3296 /* AuthenticationView.swift */,
+				A3D2083F271A1D47000D3296 /* AuthenticationView.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -120,7 +127,7 @@
 		A3D2084E271A1D5E000D3296 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
-				A30363D2271A21D00000A5A4 /* IntercorpAppInteractor.swift */,
+				A30363D2271A21D00000A5A4 /* AuthenticationInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -128,22 +135,15 @@
 		A3D2084F271A1D65000D3296 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
-				A30363D4271A21F70000A5A4 /* IntercorpAppPresenter.swift */,
+				A30363D4271A21F70000A5A4 /* AuthenticationPresenter.swift */,
 			);
 			path = Presenter;
-			sourceTree = "<group>";
-		};
-		A3D20850271A1D6B000D3296 /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Entity;
 			sourceTree = "<group>";
 		};
 		A3D20851271A1D73000D3296 /* Router */ = {
 			isa = PBXGroup;
 			children = (
-				A30363D6271A22060000A5A4 /* IntercorpAppRouter.swift */,
+				A30363D6271A22060000A5A4 /* AuthenticationRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -151,7 +151,7 @@
 		A3D20852271A1D78000D3296 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				A30363D8271A223D0000A5A4 /* IntercorpAppProtocols.swift */,
+				A30363D8271A223D0000A5A4 /* AuthenticationProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -255,7 +255,7 @@
 				A3BAEDBD271A3B7F00444839 /* GoogleService-Info.plist in Resources */,
 				A3D20846271A1D4A000D3296 /* LaunchScreen.storyboard in Resources */,
 				A3D20843271A1D4A000D3296 /* Assets.xcassets in Resources */,
-				A3D20841271A1D47000D3296 /* IntercorpAppView.storyboard in Resources */,
+				A3D20841271A1D47000D3296 /* AuthenticationView.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,12 +308,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A30363D5271A21F70000A5A4 /* IntercorpAppPresenter.swift in Sources */,
-				A30363D7271A22060000A5A4 /* IntercorpAppRouter.swift in Sources */,
-				A3CC8493271A75380080FBAC /* IntercorpAppConstants.swift in Sources */,
-				A3D2083E271A1D47000D3296 /* IntercorpAppView.swift in Sources */,
-				A30363D3271A21D00000A5A4 /* IntercorpAppInteractor.swift in Sources */,
-				A30363D9271A223D0000A5A4 /* IntercorpAppProtocols.swift in Sources */,
+				A30363D5271A21F70000A5A4 /* AuthenticationPresenter.swift in Sources */,
+				A30363D7271A22060000A5A4 /* AuthenticationRouter.swift in Sources */,
+				A3CC8493271A75380080FBAC /* AuthenticationConstants.swift in Sources */,
+				A3D2083E271A1D47000D3296 /* AuthenticationView.swift in Sources */,
+				A30363D3271A21D00000A5A4 /* AuthenticationInteractor.swift in Sources */,
+				A30363D9271A223D0000A5A4 /* AuthenticationProtocols.swift in Sources */,
 				A3D2083A271A1D47000D3296 /* AppDelegate.swift in Sources */,
 				A3D2083C271A1D47000D3296 /* SceneDelegate.swift in Sources */,
 				A3BDF134271A9BB2001150D7 /* IntercorpAppExtensions.swift in Sources */,
@@ -323,12 +323,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A3D2083F271A1D47000D3296 /* IntercorpAppView.storyboard */ = {
+		A3D2083F271A1D47000D3296 /* AuthenticationView.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				A3D20840271A1D47000D3296 /* Base */,
 			);
-			name = IntercorpAppView.storyboard;
+			name = AuthenticationView.storyboard;
 			sourceTree = "<group>";
 		};
 		A3D20844271A1D4A000D3296 /* LaunchScreen.storyboard */ = {
@@ -471,7 +471,7 @@
 				INFOPLIST_FILE = intercorpApp/Common/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = IntercorpAppView;
+				INFOPLIST_KEY_UIMainStoryboardFile = AuthenticationView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -500,7 +500,7 @@
 				INFOPLIST_FILE = intercorpApp/Common/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = IntercorpAppView;
+				INFOPLIST_KEY_UIMainStoryboardFile = AuthenticationView;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
