@@ -6,12 +6,17 @@
 //
 
 import Foundation
+import UIKit
 
 class IntercorpAppPresenter: IntercorpAppPresenterProtocol {
   
   // MARK: - Protocol properties
   
-  var view: IntercorpAppViewProtocol?
+  weak var view: IntercorpAppViewProtocol?
   var interactor: IntercorpAppInteractorProtocol?
   var router: IntercorpAppRouterProtocol?
+  
+  func loginWithFacebook(viewController: UIViewController) {
+    interactor?.loginWithFacebook(viewController: viewController)
+  }
 }

@@ -13,15 +13,19 @@ protocol IntercorpAppViewProtocol: AnyObject {
 }
 
 protocol IntercorpAppRouterProtocol: AnyObject {
-  static func createIntercorpAppModule() -> UIViewController
+  func presentIntercorpAppModule(from window: UIWindow?)
 }
 
 protocol IntercorpAppPresenterProtocol: AnyObject {
   var view: IntercorpAppViewProtocol? { get set }
   var interactor: IntercorpAppInteractorProtocol? { get set }
   var router: IntercorpAppRouterProtocol? { get set }
+  
+  func loginWithFacebook(viewController: UIViewController)
 }
 
 protocol IntercorpAppInteractorProtocol: AnyObject {
   var presenter: IntercorpAppPresenterProtocol? { get set }
+  
+  func loginWithFacebook(viewController: UIViewController)
 }

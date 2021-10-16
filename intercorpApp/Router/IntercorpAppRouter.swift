@@ -9,18 +9,18 @@ import Foundation
 import UIKit
 
 class IntercorpAppRouter: IntercorpAppRouterProtocol {
-  class func createIntercorpAppModule() -> UIViewController {
-    let view = IntercorpAppView()
-    let presenter: IntercorpAppPresenterProtocol = IntercorpAppPresenter()
+  
+  func presentIntercorpAppModule(from window: UIWindow?) {
+    let view: IntercorpAppView = IntercorpAppView.instantiateFromStoryboard()
     let interactor: IntercorpAppInteractorProtocol = IntercorpAppInteractor()
     let router: IntercorpAppRouterProtocol = IntercorpAppRouter()
-    
+    let presenter: IntercorpAppPresenterProtocol = IntercorpAppPresenter()
+    let navigationController = UINavigationController(rootViewController: view)
+    window?.rootViewController = navigationController
     view.presenter = presenter
     presenter.view = view
     presenter.router = router
     presenter.interactor = interactor
     interactor.presenter = presenter
-    
-    return view
   }
 }
