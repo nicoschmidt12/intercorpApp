@@ -18,10 +18,13 @@ class FormView: UIViewController, FormViewProtocol {
   
   // MARK: - Private properties
   
+  let constants: FormConstants = FormConstants()
+  
   // MARK: - Life Cycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    title = constants.screenTitle
   }
   
   // MARK: - Private funtions
