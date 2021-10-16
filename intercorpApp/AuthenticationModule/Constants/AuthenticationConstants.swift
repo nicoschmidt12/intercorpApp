@@ -7,7 +7,7 @@
 
 import Foundation
 
-class IntercorpAppConstants {
+class AuthenticationConstants {
   
   let facebookButtonCornerRadius: Float = 8.0
   let facebookButtonText: String = "SignIn With Facebook"

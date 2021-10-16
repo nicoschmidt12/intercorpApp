@@ -8,13 +8,13 @@
 import Foundation
 import UIKit
 
-class IntercorpAppRouter: IntercorpAppRouterProtocol {
+class AuthenticationRouter: AuthenticationRouterProtocol {
   
-  func presentIntercorpAppModule(from window: UIWindow?) {
-    let view: IntercorpAppView = IntercorpAppView.instantiateFromStoryboard()
-    let interactor: IntercorpAppInteractorProtocol = IntercorpAppInteractor()
-    let router: IntercorpAppRouterProtocol = IntercorpAppRouter()
-    let presenter: IntercorpAppPresenterProtocol = IntercorpAppPresenter()
+  func presentAuthenticationModule(from window: UIWindow?) {
+    let view: AuthenticationView = AuthenticationView.instantiateFromStoryboard()
+    let interactor: AuthenticationInteractorProtocol = AuthenticationInteractor()
+    let router: AuthenticationRouterProtocol = AuthenticationRouter()
+    let presenter: AuthenticationPresenterProtocol = AuthenticationPresenter()
     let navigationController = UINavigationController(rootViewController: view)
     window?.rootViewController = navigationController
     view.presenter = presenter
