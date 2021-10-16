@@ -10,6 +10,8 @@ import UIKit
 
 class AuthenticationRouter: AuthenticationRouterProtocol {
   
+  let routerForm: FormRouter = FormRouter()
+  
   func presentAuthenticationModule(from window: UIWindow?) {
     let view: AuthenticationView = AuthenticationView.instantiateFromStoryboard()
     let interactor: AuthenticationInteractorProtocol = AuthenticationInteractor()
@@ -22,5 +24,10 @@ class AuthenticationRouter: AuthenticationRouterProtocol {
     presenter.router = router
     presenter.interactor = interactor
     interactor.presenter = presenter
+  }
+  
+  func goToFormModule(from viewController: AnyObject?) {
+    guard let viewController: UIViewController = viewController as? UIViewController else { return }
+    routerForm.presentFormModule(from: viewController)
   }
 }

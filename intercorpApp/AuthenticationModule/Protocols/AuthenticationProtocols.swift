@@ -14,6 +14,7 @@ protocol AuthenticationViewProtocol: AnyObject {
 
 protocol AuthenticationRouterProtocol: AnyObject {
   func presentAuthenticationModule(from window: UIWindow?)
+  func goToFormModule(from viewController: AnyObject?)
 }
 
 protocol AuthenticationPresenterProtocol: AnyObject {
@@ -22,6 +23,7 @@ protocol AuthenticationPresenterProtocol: AnyObject {
   var router: AuthenticationRouterProtocol? { get set }
   
   func loginWithFacebook(viewController: UIViewController)
+  func goToFormModule()
 }
 
 protocol AuthenticationInteractorProtocol: AnyObject {

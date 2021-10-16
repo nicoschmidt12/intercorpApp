@@ -19,4 +19,8 @@ class AuthenticationPresenter: AuthenticationPresenterProtocol {
   func loginWithFacebook(viewController: UIViewController) {
     interactor?.loginWithFacebook(viewController: viewController)
   }
+  
+  func goToFormModule() {
+    router?.goToFormModule(from: view)
+  }
 }
