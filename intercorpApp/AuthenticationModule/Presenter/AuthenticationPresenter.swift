@@ -23,4 +23,8 @@ class AuthenticationPresenter: AuthenticationPresenterProtocol {
   func goToFormModule() {
     router?.goToFormModule(from: view)
   }
+  
+  func callToPopup() {
+    view?.showPopup()
+  }
 }
