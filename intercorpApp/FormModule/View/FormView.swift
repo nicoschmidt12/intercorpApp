@@ -27,6 +27,7 @@ class FormView: UIViewController, FormViewProtocol {
   
   let constants: FormConstants = FormConstants()
   let datePicker: UIDatePicker = UIDatePicker()
+  let popup: PopupMessage = PopupMessage()
   
   // MARK: - Life Cycle
   
@@ -79,24 +80,42 @@ class FormView: UIViewController, FormViewProtocol {
     birthdayTextField.text = constants.clearTextField
   }
   
+  private func showPopupMissingField() {
+    popup.callPopup(popupType: .missingField, view: self)
+    clearTextFields()
+  }
+  
+  private func validateTextFields() -> Bool {
+    if nameTextField.text != constants.clearTextField &&
+        surnameTextField.text != constants.clearTextField &&
+        ageTextField.text != constants.clearTextField &&
+        birthdayTextField.text != constants.clearTextField {
+      return true
+    } else {
+      return false
+    }
+  }
+  
   // MARK: - Funtions
   
   func showPopupConfirmation() {
-    let alertController = UIAlertController(title: constants.popupTitle, message: constants.popupMessage, preferredStyle: .alert)
-    alertController.addAction(UIAlertAction(title: constants.popupButtonText, style: .default))
-    self.present(alertController, animated: true, completion: nil)
+    popup.callPopup(popupType: .confirmation, view: self)
     clearTextFields()
   }
   
   // MARKz: - Buttons Actions
   
   @IBAction func createUserButtonTap(_ sender: Any) {
-    let user: User = User.init(
-      name: nameTextField.text ?? "",
-      surname: surnameTextField.text ?? "",
-      age: ageTextField.text ?? "",
-      birthday: birthdayTextField.text ?? "")
-    presenter?.sendUserData(userData: user)
+    if validateTextFields() {
+      let user: User = User.init(
+        name: nameTextField.text ?? "",
+        surname: surnameTextField.text ?? "",
+        age: ageTextField.text ?? "",
+        birthday: birthdayTextField.text ?? "")
+      presenter?.sendUserData(userData: user)
+    } else {
+      showPopupMissingField()
+    }
   }
   
   @IBAction func logoutButtonTap(_ sender: Any) {

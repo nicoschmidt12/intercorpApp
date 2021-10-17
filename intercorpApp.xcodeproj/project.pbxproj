@@ -12,6 +12,7 @@
 		A30363D5271A21F70000A5A4 /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D4271A21F70000A5A4 /* AuthenticationPresenter.swift */; };
 		A30363D7271A22060000A5A4 /* AuthenticationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D6271A22060000A5A4 /* AuthenticationRouter.swift */; };
 		A30363D9271A223D0000A5A4 /* AuthenticationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D8271A223D0000A5A4 /* AuthenticationProtocols.swift */; };
+		A3820347271CAB8E0057428A /* PopupMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3820346271CAB8E0057428A /* PopupMessage.swift */; };
 		A3BAEDBD271A3B7F00444839 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3BAEDBC271A3B7F00444839 /* GoogleService-Info.plist */; };
 		A3BDF134271A9BB2001150D7 /* IntercorpAppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BDF133271A9BB2001150D7 /* IntercorpAppExtensions.swift */; };
 		A3BDF13F271AAF9B001150D7 /* FormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BDF13E271AAF9B001150D7 /* FormView.swift */; };
@@ -40,6 +41,7 @@
 		A30363D4271A21F70000A5A4 /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
 		A30363D6271A22060000A5A4 /* AuthenticationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRouter.swift; sourceTree = "<group>"; };
 		A30363D8271A223D0000A5A4 /* AuthenticationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationProtocols.swift; sourceTree = "<group>"; };
+		A3820346271CAB8E0057428A /* PopupMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupMessage.swift; sourceTree = "<group>"; };
 		A3BAEDBC271A3B7F00444839 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3BDF133271A9BB2001150D7 /* IntercorpAppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpAppExtensions.swift; sourceTree = "<group>"; };
 		A3BDF13E271AAF9B001150D7 /* FormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormView.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				A3BDF150271B739D001150D7 /* UserStruct.swift */,
+				A3820346271CAB8E0057428A /* PopupMessage.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				A30363D7271A22060000A5A4 /* AuthenticationRouter.swift in Sources */,
 				A3BDF143271AAFAD001150D7 /* FormPresenter.swift in Sources */,
 				A3BDF13F271AAF9B001150D7 /* FormView.swift in Sources */,
+				A3820347271CAB8E0057428A /* PopupMessage.swift in Sources */,
 				A3CC8493271A75380080FBAC /* AuthenticationConstants.swift in Sources */,
 				A3BDF154271B9584001150D7 /* FormDataManager.swift in Sources */,
 				A3D2083E271A1D47000D3296 /* AuthenticationView.swift in Sources */,
