@@ -31,8 +31,8 @@ class FormInteractor: FormInteractorProtocol {
       constants.userAge:userData.age,
       constants.userBirthday:userData.birthday]
     if let emailWithOutDots = userEmail?.replacingOccurrences(
-      of: ".",
-      with: "_",
+      of: constants.characterToWillBeReplace,
+      with: constants.characterToWillBeSet,
       options: NSString.CompareOptions.literal,
       range:nil) {
       dataBase.child(emailWithOutDots).setValue(values)

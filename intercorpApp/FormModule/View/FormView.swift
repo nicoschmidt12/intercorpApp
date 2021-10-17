@@ -54,7 +54,6 @@ class FormView: UIViewController, FormViewProtocol {
   
   private func setupNavigationBar() {
     title = constants.navigationTitle
-    
     navigationItem.setHidesBackButton(true, animated: false)
   }
   
@@ -74,10 +73,10 @@ class FormView: UIViewController, FormViewProtocol {
   }
   
   private func clearTextFields() {
-    nameTextField.text = ""
-    surnameTextField.text = ""
-    ageTextField.text = ""
-    birthdayTextField.text = ""
+    nameTextField.text = constants.clearTextField
+    surnameTextField.text = constants.clearTextField
+    ageTextField.text = constants.clearTextField
+    birthdayTextField.text = constants.clearTextField
   }
   
   // MARK: - Funtions

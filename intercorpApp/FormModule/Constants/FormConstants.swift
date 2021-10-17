@@ -25,4 +25,7 @@ class FormConstants {
   let popupTitle: String = "¡Operación Exitosa!"
   let popupMessage: String = "Tus datos han sido almacenados correctamente en Firebase Realtime Database"
   let popupButtonText: String = "Aceptar"
+  let characterToWillBeReplace: String = "."
+  let characterToWillBeSet: String = "_"
+  let clearTextField: String = ""
 }

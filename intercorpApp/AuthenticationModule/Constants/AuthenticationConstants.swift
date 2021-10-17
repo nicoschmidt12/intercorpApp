@@ -8,7 +8,6 @@
 import Foundation
 
 class AuthenticationConstants {
-  
   let facebookButtonCornerRadius: Float = 8.0
   let facebookButtonText: String = "Iniciar sesión con Facebook"
   let popupTitle: String = "Error"

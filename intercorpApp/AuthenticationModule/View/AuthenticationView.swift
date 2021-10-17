@@ -50,17 +50,17 @@ class AuthenticationView: UIViewController, AuthenticationViewProtocol {
     activityIndicator.isHidden = false
   }
   
-  func stopActivityIndicator() {
-    activityIndicator.stopAnimating()
-    activityIndicator.isHidden = true
-  }
-  
   // MARK: - Funtions
   
   func showPopup() {
     let alertController = UIAlertController(title: constants.popupTitle, message: constants.popupMessage, preferredStyle: .alert)
     alertController.addAction(UIAlertAction(title: constants.popupButtonText, style: .default))
     self.present(alertController, animated: true, completion: nil)
+  }
+  
+  func stopActivityIndicator() {
+    activityIndicator.stopAnimating()
+    activityIndicator.isHidden = true
   }
   
   // MARK: - Button Action

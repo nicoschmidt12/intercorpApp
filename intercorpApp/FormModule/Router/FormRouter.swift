@@ -9,7 +9,6 @@ import Foundation
 import UIKit
 
 class FormRouter: FormRouterProtocol {
-  
   func presentFormModule(from viewController: AnyObject?) {
     guard let viewController: UIViewController = viewController as? UIViewController else { return }
     let view: FormView = FormView.instantiateFromStoryboard()
