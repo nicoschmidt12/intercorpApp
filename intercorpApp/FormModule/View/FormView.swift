@@ -93,7 +93,11 @@ class FormView: UIViewController, FormViewProtocol {
   // MARK: - Buttons Actions
   
   @IBAction func createUserButtonTap(_ sender: Any) {
-    let user: User = User.init(name: nameTextField.text ?? "", surname: surnameTextField.text ?? "", age: ageTextField.text ?? "", birthday: birthdayTextField.text ?? "")
+    let user: User = User.init(
+      name: nameTextField.text ?? "",
+      surname: surnameTextField.text ?? "",
+      age: ageTextField.text ?? "",
+      birthday: birthdayTextField.text ?? "")
     presenter?.sendUserData(userData: user)
   }
   
