@@ -12,6 +12,7 @@ class AuthenticationView: UIViewController, AuthenticationViewProtocol {
   // MARK: - Outlets
   
   @IBOutlet weak var facebookButton: UIButton!
+  @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
   
   // MARK: - Protocol properties
   
@@ -25,6 +26,7 @@ class AuthenticationView: UIViewController, AuthenticationViewProtocol {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    activityIndicator.isHidden = true
     checkUserDefaults()
     setupFacebookButton()
   }
@@ -43,6 +45,16 @@ class AuthenticationView: UIViewController, AuthenticationViewProtocol {
     }
   }
   
+  private func startActivityIndicator() {
+    activityIndicator.startAnimating()
+    activityIndicator.isHidden = false
+  }
+  
+  func stopActivityIndicator() {
+    activityIndicator.stopAnimating()
+    activityIndicator.isHidden = true
+  }
+  
   // MARK: - Funtions
   
   func showPopup() {
@@ -54,6 +66,7 @@ class AuthenticationView: UIViewController, AuthenticationViewProtocol {
   // MARK: - Button Action
   
   @IBAction func facebookButtonTaped(_ sender: Any) {
+    startActivityIndicator()
     presenter?.loginWithFacebook(viewController: self)
   }
 }

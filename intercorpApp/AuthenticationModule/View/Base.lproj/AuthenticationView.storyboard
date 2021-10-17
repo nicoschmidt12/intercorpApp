@@ -16,15 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ejercicio Práctico" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vaB-us-Rg4">
-                                <rect key="frame" x="98" y="178" width="218" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="9oa-RR-284"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L04-Nk-B3A">
                                 <rect key="frame" x="20" y="794" width="374" height="48"/>
                                 <color key="backgroundColor" systemColor="linkColor"/>
@@ -38,20 +29,26 @@
                                     <action selector="facebookButtonTaped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1UH-c1-Hpz"/>
                                 </connections>
                             </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="oTj-9q-qLc">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="color" red="0.96078431369999995" green="0.48627450979999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.92549019607843142" green="0.93725490196078431" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.17254901960784313" green="0.2196078431372549" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="oTj-9q-qLc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6jB-tG-Oqk"/>
+                            <constraint firstItem="oTj-9q-qLc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="N1w-t4-seA"/>
                             <constraint firstItem="L04-Nk-B3A" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="WIW-2N-4In"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vaB-us-Rg4" secondAttribute="trailing" constant="98" id="YA5-49-mHG"/>
-                            <constraint firstItem="vaB-us-Rg4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="90" id="eHG-oX-v5z"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="L04-Nk-B3A" secondAttribute="bottom" constant="20" id="kmc-Mm-fpy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L04-Nk-B3A" secondAttribute="trailing" constant="20" id="sa3-cE-QLe"/>
-                            <constraint firstItem="vaB-us-Rg4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="98" id="y7j-Ks-HTh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="9st-KA-BcW"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="oTj-9q-qLc" id="JOU-P5-e6f"/>
                         <outlet property="facebookButton" destination="L04-Nk-B3A" id="UUf-8c-8Al"/>
                     </connections>
                 </viewController>

@@ -23,6 +23,7 @@ class AuthenticationPresenter: AuthenticationPresenterProtocol {
   }
   
   func goToFormModule() {
+    view?.stopActivityIndicator()
     router?.goToFormModule(from: view)
   }
   

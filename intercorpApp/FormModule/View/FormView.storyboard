@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="cg1-oc-Tm8">
-                                <rect key="frame" x="20" y="88" width="374" height="288"/>
+                                <rect key="frame" x="20" y="108" width="374" height="288"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dH4-sc-79b">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="48"/>
@@ -41,40 +41,46 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="date-time"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gra-b8-XTA">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="mUi-zh-fW9">
                                         <rect key="frame" x="0.0" y="240" width="374" height="48"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="48" id="259-2F-wjU"/>
-                                        </constraints>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                        <connections>
-                                            <action selector="createUserButtonTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9RY-vt-jax"/>
-                                        </connections>
-                                    </button>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gra-b8-XTA">
+                                                <rect key="frame" x="0.0" y="0.0" width="181" height="48"/>
+                                                <color key="backgroundColor" red="0.011764705882352941" green="0.60784313725490191" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="259-2F-wjU"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="createUserButtonTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="9RY-vt-jax"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaj-mf-2Bm">
+                                                <rect key="frame" x="193" y="0.0" width="181" height="48"/>
+                                                <color key="backgroundColor" red="0.96078431372549022" green="0.48627450980392156" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="48" id="dRG-ZK-5Lf"/>
+                                                </constraints>
+                                                <color key="tintColor" red="0.92549019610000005" green="0.93725490199999995" blue="0.94509803920000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                                <connections>
+                                                    <action selector="logoutButtonTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="em3-Q7-eLt"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaj-mf-2Bm">
-                                <rect key="frame" x="20" y="794" width="374" height="48"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="48" id="dRG-ZK-5Lf"/>
-                                </constraints>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                                <connections>
-                                    <action selector="logoutButtonTap:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="em3-Q7-eLt"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" red="0.92549019607843142" green="0.93725490196078431" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.17254901960784313" green="0.2196078431372549" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="cg1-oc-Tm8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="58Q-nA-JaZ"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aaj-mf-2Bm" secondAttribute="trailing" constant="20" id="9WJ-iS-Odf"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="aaj-mf-2Bm" secondAttribute="bottom" constant="20" id="JI4-gU-XbH"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cg1-oc-Tm8" secondAttribute="trailing" constant="20" id="Q3z-xq-dCW"/>
-                            <constraint firstItem="aaj-mf-2Bm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="fDo-K8-KIc"/>
-                            <constraint firstItem="cg1-oc-Tm8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="qVv-hw-W2C"/>
+                            <constraint firstItem="cg1-oc-Tm8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="qVv-hw-W2C"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="mks-so-keS"/>

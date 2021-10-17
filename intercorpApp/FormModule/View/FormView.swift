@@ -43,19 +43,18 @@ class FormView: UIViewController, FormViewProtocol {
   private func setupButtons() {
     // user button
     createUserButton.layer.cornerRadius = CGFloat(constants.buttonsCornerRadius)
-    createUserButton.backgroundColor = .systemBlue
     createUserButton.tintColor = .white
     createUserButton.setTitle(constants.createUserButtonTitle, for: .normal)
     
     // logout button
     logoutButton.layer.cornerRadius = CGFloat(constants.buttonsCornerRadius)
-    logoutButton.backgroundColor = .red
     logoutButton.tintColor = .white
     logoutButton.setTitle(constants.logoutButtonTitle, for: .normal)
   }
   
   private func setupNavigationBar() {
     title = constants.navigationTitle
+    
     navigationItem.setHidesBackButton(true, animated: false)
   }
   
@@ -90,7 +89,7 @@ class FormView: UIViewController, FormViewProtocol {
     clearTextFields()
   }
   
-  // MARK: - Buttons Actions
+  // MARKz: - Buttons Actions
   
   @IBAction func createUserButtonTap(_ sender: Any) {
     let user: User = User.init(
