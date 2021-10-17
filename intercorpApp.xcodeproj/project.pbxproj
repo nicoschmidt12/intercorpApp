@@ -98,7 +98,7 @@
 		A3BDF136271AAF62001150D7 /* FormModule */ = {
 			isa = PBXGroup;
 			children = (
-				A3BDF152271B9567001150D7 /* DataManager */,
+				A3BDF152271B9567001150D7 /* APIDataManager */,
 				A3BDF14D271B6982001150D7 /* Constants */,
 				A3BDF13C271AAF84001150D7 /* Protocols */,
 				A3BDF13B271AAF80001150D7 /* Router */,
@@ -167,12 +167,12 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
-		A3BDF152271B9567001150D7 /* DataManager */ = {
+		A3BDF152271B9567001150D7 /* APIDataManager */ = {
 			isa = PBXGroup;
 			children = (
 				A3BDF153271B9583001150D7 /* FormDataManager.swift */,
 			);
-			path = DataManager;
+			path = APIDataManager;
 			sourceTree = "<group>";
 		};
 		A3CC8491271A75200080FBAC /* Constants */ = {

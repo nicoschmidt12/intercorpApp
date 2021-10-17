@@ -55,7 +55,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aaj-mf-2Bm">
-                                <rect key="frame" x="20" y="814" width="374" height="48"/>
+                                <rect key="frame" x="20" y="794" width="374" height="48"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="dRG-ZK-5Lf"/>
                                 </constraints>
@@ -71,7 +71,7 @@
                         <constraints>
                             <constraint firstItem="cg1-oc-Tm8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="58Q-nA-JaZ"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="aaj-mf-2Bm" secondAttribute="trailing" constant="20" id="9WJ-iS-Odf"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="aaj-mf-2Bm" secondAttribute="bottom" id="JI4-gU-XbH"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="aaj-mf-2Bm" secondAttribute="bottom" constant="20" id="JI4-gU-XbH"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="cg1-oc-Tm8" secondAttribute="trailing" constant="20" id="Q3z-xq-dCW"/>
                             <constraint firstItem="aaj-mf-2Bm" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="fDo-K8-KIc"/>
                             <constraint firstItem="cg1-oc-Tm8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="qVv-hw-W2C"/>

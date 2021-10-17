@@ -9,6 +9,8 @@ import Foundation
 import UIKit
 protocol FormViewProtocol: AnyObject {
   var presenter: FormPresenterProtocol? { get set }
+  
+  func showPopupConfirmation()
 }
 
 protocol FormRouterProtocol: AnyObject {
@@ -25,19 +27,20 @@ protocol FormPresenterProtocol: AnyObject {
   func facebookLogout()
   func dismissFormModule()
   func fetchUserEmail()
+  func showPopupConfirmation()
 }
 
 protocol FormInteractorProtocol: AnyObject {
   var presenter: FormPresenterProtocol? { get set }
-  var dataManager: FormDataManagerProtocol? { get set }
+  var dataManager: FormAPIDataManagerProtocol? { get set }
   
   func getUserData(userData: User)
   func facebookLogout()
-  func setupUserDefaults(with id: String)
+  func setupUserDefaults(with email: String)
   func fetchUserEmail()
 }
 
-protocol FormDataManagerProtocol: AnyObject {
+protocol FormAPIDataManagerProtocol: AnyObject {
   var interactor: FormInteractorProtocol? { get set }
   
   func getUserEmail()
