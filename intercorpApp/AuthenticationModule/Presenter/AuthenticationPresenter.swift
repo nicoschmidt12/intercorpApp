@@ -16,6 +16,8 @@ class AuthenticationPresenter: AuthenticationPresenterProtocol {
   var interactor: AuthenticationInteractorProtocol?
   var router: AuthenticationRouterProtocol?
   
+  // MARK: - Functions
+  
   func loginWithFacebook(viewController: UIViewController) {
     interactor?.loginWithFacebook(viewController: viewController)
   }

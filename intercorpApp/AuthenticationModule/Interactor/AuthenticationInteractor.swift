@@ -21,7 +21,7 @@ class AuthenticationInteractor: AuthenticationInteractorProtocol {
   func loginWithFacebook(viewController: UIViewController) {
     let loginManager = LoginManager()
     loginManager.logOut()
-    loginManager.logIn(permissions: [], viewController: viewController) { (Result) in
+    loginManager.logIn(permissions: [.email], viewController: viewController) { (Result) in
       switch Result {
         // When the service is success, we call Form Module
       case .success(granted: _, declined: _, token: let token):

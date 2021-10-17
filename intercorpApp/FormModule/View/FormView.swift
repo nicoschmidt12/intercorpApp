@@ -26,7 +26,7 @@ class FormView: UIViewController, FormViewProtocol {
   // MARK: - Private properties
   
   let constants: FormConstants = FormConstants()
-  let dateFormatter: DateFormatter = DateFormatter()
+  let datePicker: UIDatePicker = UIDatePicker()
   
   // MARK: - Life Cycle
   
@@ -34,6 +34,7 @@ class FormView: UIViewController, FormViewProtocol {
     super.viewDidLoad()
     setupNavigationBar()
     setupButtons()
+    createDatePicker()
     presenter?.fetchUserEmail()
   }
   
@@ -58,16 +59,57 @@ class FormView: UIViewController, FormViewProtocol {
     navigationItem.setHidesBackButton(true, animated: false)
   }
   
+  private func createDatePicker() {
+    // Toolbar
+    let toolbar: UIToolbar = UIToolbar()
+    toolbar.sizeToFit()
+    // Bar button
+    let doneButton: UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: nil, action: #selector(doneButtonTap))
+    toolbar.setItems([doneButton], animated: true)
+    // Assign toolbar
+    birthdayTextField.inputAccessoryView = toolbar
+    // Assign datePicker to the textField
+    birthdayTextField.inputView = datePicker
+    // DatePicker mode
+    datePicker.datePickerMode = .date
+  }
+  
+  private func clearTextFields() {
+    nameTextField.text = ""
+    surnameTextField.text = ""
+    ageTextField.text = ""
+    birthdayTextField.text = ""
+  }
+  
+  // MARK: - Funtions
+  
+  func showPopupConfirmation() {
+    let alertController = UIAlertController(title: constants.popupTitle, message: constants.popupMessage, preferredStyle: .alert)
+    alertController.addAction(UIAlertAction(title: constants.popupButtonText, style: .default))
+    self.present(alertController, animated: true, completion: nil)
+    clearTextFields()
+  }
+  
   // MARK: - Buttons Actions
   
   @IBAction func createUserButtonTap(_ sender: Any) {
-    //dateFormatter.dateFormat = constants.dateFormat
-    //let birthday = dateFormatter.date(from: birthdayTextField.text ?? "")
-    let user: User = User.init(name: nameTextField.text ?? "", surname: surnameTextField.text ?? "", age: ageTextField.text ?? "", birthday: birthdayTextField.text ?? "")
+    let user: User = User.init(
+      name: nameTextField.text ?? "",
+      surname: surnameTextField.text ?? "",
+      age: ageTextField.text ?? "",
+      birthday: birthdayTextField.text ?? "")
     presenter?.sendUserData(userData: user)
   }
   
   @IBAction func logoutButtonTap(_ sender: Any) {
     presenter?.facebookLogout()
+  }
+  
+  @objc func doneButtonTap() {
+    let formatter: DateFormatter = DateFormatter()
+    formatter.dateStyle = .medium
+    formatter.timeStyle = .none
+    birthdayTextField.text = formatter.string(from: datePicker.date)
+    self.view.endEditing(true)
   }
 }

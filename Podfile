@@ -2,16 +2,13 @@
 # platform :ios, '9.0'
 
 target 'intercorpApp' do
-  # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
 
-# add the Firebase pod for Google Analytics
 pod 'Firebase/Analytics'
 pod 'Firebase/Auth'
 pod 'FBSDKLoginKit'
-    
-# or pod ‘Firebase/AnalyticsWithoutAdIdSupport’
-# for Analytics without IDFA collection capability
+pod 'Firebase/Core'
+pod 'Firebase/Database'
 
 # add pods for any other desired Firebase products
 # https://firebase.google.com/docs/ios/setup#available-pods

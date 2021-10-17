@@ -34,4 +34,8 @@ class FormPresenter: FormPresenterProtocol {
   func fetchUserEmail() {
     interactor?.fetchUserEmail()
   }
+  
+  func showPopupConfirmation() {
+    view?.showPopupConfirmation()
+  }
 }
