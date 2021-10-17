@@ -40,7 +40,6 @@ class AuthenticationView: UIViewController, AuthenticationViewProtocol {
       green: constants.rgbGreen,
       blue: constants.rgbBlue)
     facebookButton.setTitle(constants.facebookButtonText, for: .normal)
-    facebookButton.layer.cornerRadius = CGFloat(constants.facebookButtonCornerRadius)
     facebookButton.addTarget(self, action: #selector(didTapFacebookButton), for: .touchUpInside)
     facebookButton.spinnerColor = .white
     view.addSubview(facebookButton)
