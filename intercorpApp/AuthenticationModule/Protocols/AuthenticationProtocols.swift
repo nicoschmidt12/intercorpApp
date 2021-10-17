@@ -12,7 +12,7 @@ protocol AuthenticationViewProtocol: AnyObject {
   var presenter: AuthenticationPresenterProtocol? { get set }
   
   func showPopup()
-  func stopActivityIndicator()
+  func goToFormModule()
 }
 
 protocol AuthenticationRouterProtocol: AnyObject {

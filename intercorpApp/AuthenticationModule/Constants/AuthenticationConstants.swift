@@ -14,5 +14,8 @@ class AuthenticationConstants {
   let popupMessage: String = "Ha ocurrido un error al iniciar sesión con Facebook"
   let popupButtonText: String = "Aceptar"
   let userDefaultAuth: String = "Facebook"
+  let rgbRed: Int = 44
+  let rgbGreen: Int = 56
+  let rgbBlue: Int = 74
 }
 

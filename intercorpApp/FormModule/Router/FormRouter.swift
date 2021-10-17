@@ -25,7 +25,7 @@ class FormRouter: FormRouterProtocol {
     interactor.dataManager = dataManager
     dataManager.interactor = interactor
     
-    viewController.navigationController?.pushViewController(view, animated: true)
+    viewController.navigationController?.pushViewController(view, animated: false)
   }
   
   func dismiss(controller: AnyObject?) {

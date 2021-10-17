@@ -7,8 +7,9 @@
 
 import Foundation
 import UIKit
+import TransitionButton
 
-class FormView: UIViewController, FormViewProtocol {
+class FormView: CustomTransitionViewController, FormViewProtocol {
   
   // MARK: - Outlets
   
@@ -33,6 +34,10 @@ class FormView: UIViewController, FormViewProtocol {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    view.backgroundColor = UIColor(
+      red: constants.rgbRed,
+      green: constants.rgbGreen,
+      blue: constants.rgbBlue)
     setupNavigationBar()
     setupButtons()
     createDatePicker()

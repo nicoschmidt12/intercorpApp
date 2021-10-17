@@ -30,4 +30,7 @@ class FormConstants {
   let characterToWillBeReplace: String = "."
   let characterToWillBeSet: String = "_"
   let clearTextField: String = ""
+  let rgbRed: Int = 44
+  let rgbGreen: Int = 56
+  let rgbBlue: Int = 74
 }

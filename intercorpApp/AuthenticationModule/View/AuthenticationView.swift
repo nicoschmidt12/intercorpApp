@@ -5,14 +5,15 @@
 //  Created by Nicolas schmidt on 15/10/2021.
 //
 
+import TransitionButton
 import UIKit
 
 class AuthenticationView: UIViewController, AuthenticationViewProtocol {
   
   // MARK: - Outlets
   
-  @IBOutlet weak var facebookButton: UIButton!
-  @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+  ///Cannot use 'constants' because property initializers run before 'self' is available
+  let facebookButton = TransitionButton(frame: CGRect(x: 0, y: 0, width: 250, height: 48))
   
   // MARK: - Protocol properties
   
@@ -26,7 +27,6 @@ class AuthenticationView: UIViewController, AuthenticationViewProtocol {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    activityIndicator.isHidden = true
     checkUserDefaults()
     setupFacebookButton()
   }
@@ -34,8 +34,16 @@ class AuthenticationView: UIViewController, AuthenticationViewProtocol {
   // MARK: - Private Funtions
   
   private func setupFacebookButton() {
-    facebookButton.layer.cornerRadius = CGFloat(constants.facebookButtonCornerRadius)
+    facebookButton.center = view.center
+    facebookButton.backgroundColor = UIColor(
+      red: constants.rgbRed,
+      green: constants.rgbGreen,
+      blue: constants.rgbBlue)
     facebookButton.setTitle(constants.facebookButtonText, for: .normal)
+    facebookButton.layer.cornerRadius = CGFloat(constants.facebookButtonCornerRadius)
+    facebookButton.addTarget(self, action: #selector(didTapFacebookButton), for: .touchUpInside)
+    facebookButton.spinnerColor = .white
+    view.addSubview(facebookButton)
   }
   
   private func checkUserDefaults() {
@@ -43,11 +51,6 @@ class AuthenticationView: UIViewController, AuthenticationViewProtocol {
     if let _ = defaults.value(forKey: constants.userDefaultAuth) as? String {
       presenter?.router?.goToFormModule(from: self)
     }
-  }
-  
-  private func startActivityIndicator() {
-    activityIndicator.startAnimating()
-    activityIndicator.isHidden = false
   }
   
   // MARK: - Funtions
@@ -58,15 +61,20 @@ class AuthenticationView: UIViewController, AuthenticationViewProtocol {
     self.present(alertController, animated: true, completion: nil)
   }
   
-  func stopActivityIndicator() {
-    activityIndicator.stopAnimating()
-    activityIndicator.isHidden = true
+  func goToFormModule() {
+    DispatchQueue.main.async {
+      self.facebookButton.stopAnimation(animationStyle: .expand, revertAfterDelay: 1) {
+        DispatchQueue.main.async {
+          self.presenter?.router?.goToFormModule(from: self)
+        }
+      }
+    }
   }
   
   // MARK: - Button Action
   
-  @IBAction func facebookButtonTaped(_ sender: Any) {
-    startActivityIndicator()
+  @objc func didTapFacebookButton() {
+    facebookButton.startAnimation()
     presenter?.loginWithFacebook(viewController: self)
   }
 }
