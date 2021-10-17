@@ -1,8 +1,11 @@
 # Intercorp iOS App 📲
 
-_Challenge for Intercorp Company_
+* Challenge for Intercorp Company
+  * Login with Facebook
+  * Save user data in Firebase Realtime Database
 
-## users to login on facebook
+
+## Users to login on facebook
 * email: francisco_qnnyqmz_perez@tfbnw.net ; pass: franperez
 * email: nicolas_pmgqpig_schmidt@tfbnw.net ; pass: pruebafacebooklogin
 
