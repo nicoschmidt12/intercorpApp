@@ -10,6 +10,8 @@ import UIKit
 
 protocol AuthenticationViewProtocol: AnyObject {
   var presenter: AuthenticationPresenterProtocol? { get set }
+  
+  func showPopup()
 }
 
 protocol AuthenticationRouterProtocol: AnyObject {
@@ -24,6 +26,7 @@ protocol AuthenticationPresenterProtocol: AnyObject {
   
   func loginWithFacebook(viewController: UIViewController)
   func goToFormModule()
+  func callToPopup()
 }
 
 protocol AuthenticationInteractorProtocol: AnyObject {

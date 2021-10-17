@@ -20,6 +20,9 @@
 		A3BDF145271AAFB5001150D7 /* FormRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BDF144271AAFB5001150D7 /* FormRouter.swift */; };
 		A3BDF147271AB08F001150D7 /* FormProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BDF146271AB08F001150D7 /* FormProtocols.swift */; };
 		A3BDF149271AB3A3001150D7 /* FormView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3BDF148271AB3A3001150D7 /* FormView.storyboard */; };
+		A3BDF14F271B6999001150D7 /* FormConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BDF14E271B6998001150D7 /* FormConstants.swift */; };
+		A3BDF151271B739E001150D7 /* userStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BDF150271B739D001150D7 /* userStruct.swift */; };
+		A3BDF154271B9584001150D7 /* FormDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BDF153271B9583001150D7 /* FormDataManager.swift */; };
 		A3CC8493271A75380080FBAC /* AuthenticationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CC8492271A75380080FBAC /* AuthenticationConstants.swift */; };
 		A3D2083A271A1D47000D3296 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D20839271A1D47000D3296 /* AppDelegate.swift */; };
 		A3D2083C271A1D47000D3296 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3D2083B271A1D47000D3296 /* SceneDelegate.swift */; };
@@ -45,6 +48,9 @@
 		A3BDF144271AAFB5001150D7 /* FormRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormRouter.swift; sourceTree = "<group>"; };
 		A3BDF146271AB08F001150D7 /* FormProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormProtocols.swift; sourceTree = "<group>"; };
 		A3BDF148271AB3A3001150D7 /* FormView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FormView.storyboard; sourceTree = "<group>"; };
+		A3BDF14E271B6998001150D7 /* FormConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormConstants.swift; sourceTree = "<group>"; };
+		A3BDF150271B739D001150D7 /* userStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userStruct.swift; sourceTree = "<group>"; };
+		A3BDF153271B9583001150D7 /* FormDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDataManager.swift; sourceTree = "<group>"; };
 		A3CC8492271A75380080FBAC /* AuthenticationConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationConstants.swift; sourceTree = "<group>"; };
 		A3D20836271A1D47000D3296 /* intercorpApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intercorpApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3D20839271A1D47000D3296 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -92,6 +98,8 @@
 		A3BDF136271AAF62001150D7 /* FormModule */ = {
 			isa = PBXGroup;
 			children = (
+				A3BDF152271B9567001150D7 /* DataManager */,
+				A3BDF14D271B6982001150D7 /* Constants */,
 				A3BDF13C271AAF84001150D7 /* Protocols */,
 				A3BDF13B271AAF80001150D7 /* Router */,
 				A3BDF13A271AAF7B001150D7 /* Entity */,
@@ -130,6 +138,7 @@
 		A3BDF13A271AAF7B001150D7 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				A3BDF150271B739D001150D7 /* userStruct.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -148,6 +157,22 @@
 				A3BDF146271AB08F001150D7 /* FormProtocols.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A3BDF14D271B6982001150D7 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				A3BDF14E271B6998001150D7 /* FormConstants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		A3BDF152271B9567001150D7 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				A3BDF153271B9583001150D7 /* FormDataManager.swift */,
+			);
+			path = DataManager;
 			sourceTree = "<group>";
 		};
 		A3CC8491271A75200080FBAC /* Constants */ = {
@@ -388,15 +413,18 @@
 				A3BDF143271AAFAD001150D7 /* FormPresenter.swift in Sources */,
 				A3BDF13F271AAF9B001150D7 /* FormView.swift in Sources */,
 				A3CC8493271A75380080FBAC /* AuthenticationConstants.swift in Sources */,
+				A3BDF154271B9584001150D7 /* FormDataManager.swift in Sources */,
 				A3D2083E271A1D47000D3296 /* AuthenticationView.swift in Sources */,
 				A30363D3271A21D00000A5A4 /* AuthenticationInteractor.swift in Sources */,
 				A30363D9271A223D0000A5A4 /* AuthenticationProtocols.swift in Sources */,
 				A3BDF141271AAFA3001150D7 /* FormInteractor.swift in Sources */,
 				A3D2083A271A1D47000D3296 /* AppDelegate.swift in Sources */,
+				A3BDF14F271B6999001150D7 /* FormConstants.swift in Sources */,
 				A3BDF145271AAFB5001150D7 /* FormRouter.swift in Sources */,
 				A3D2083C271A1D47000D3296 /* SceneDelegate.swift in Sources */,
 				A3BDF134271A9BB2001150D7 /* IntercorpAppExtensions.swift in Sources */,
 				A3BDF147271AB08F001150D7 /* FormProtocols.swift in Sources */,
+				A3BDF151271B739E001150D7 /* userStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

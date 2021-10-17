@@ -25,15 +25,33 @@ class AuthenticationView: UIViewController, AuthenticationViewProtocol {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    checkUserDefaults()
     setupFacebookButton()
   }
   
-  // MARK: - Private funtions
+  // MARK: - Private Funtions
   
   private func setupFacebookButton() {
     facebookButton.layer.cornerRadius = CGFloat(constants.facebookButtonCornerRadius)
     facebookButton.setTitle(constants.facebookButtonText, for: .normal)
   }
+  
+  private func checkUserDefaults() {
+    let defaults = UserDefaults.standard
+    if let _ = defaults.value(forKey: constants.userDefaultAuth) as? String {
+      presenter?.router?.goToFormModule(from: self)
+    }
+  }
+  
+  // MARK: - Funtions
+  
+  func showPopup() {
+    let alertController = UIAlertController(title: constants.popupTitle, message: constants.popupMessage, preferredStyle: .alert)
+    alertController.addAction(UIAlertAction(title: constants.popupButtonText, style: .default))
+    self.present(alertController, animated: true, completion: nil)
+  }
+  
+  // MARK: - Button Action
   
   @IBAction func facebookButtonTaped(_ sender: Any) {
     presenter?.loginWithFacebook(viewController: self)

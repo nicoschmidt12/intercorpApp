@@ -10,6 +10,10 @@ import Foundation
 class AuthenticationConstants {
   
   let facebookButtonCornerRadius: Float = 8.0
-  let facebookButtonText: String = "SignIn With Facebook"
+  let facebookButtonText: String = "Iniciar sesión con Facebook"
+  let popupTitle: String = "Error"
+  let popupMessage: String = "Ha ocurrido un error al iniciar sesión con Facebook"
+  let popupButtonText: String = "Aceptar"
+  let userDefaultAuth: String = "Facebook"
 }
 

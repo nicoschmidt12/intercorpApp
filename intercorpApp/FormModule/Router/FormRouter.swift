@@ -16,13 +16,21 @@ class FormRouter: FormRouterProtocol {
     let interactor: FormInteractorProtocol = FormInteractor()
     let router: FormRouterProtocol = FormRouter()
     let presenter: FormPresenterProtocol = FormPresenter()
+    let dataManager: FormDataManagerProtocol = FormDataManager()
     
     view.presenter = presenter
     presenter.view = view
     presenter.router = router
     presenter.interactor = interactor
     interactor.presenter = presenter
+    interactor.dataManager = dataManager
+    dataManager.interactor = interactor
     
     viewController.navigationController?.pushViewController(view, animated: true)
   }
+  
+  func dismiss(controller: AnyObject?) {
+    guard let viewController: UIViewController = controller as? UIViewController else { return }
+    viewController.navigationController?.popViewController(animated: true)
+   }
 }
