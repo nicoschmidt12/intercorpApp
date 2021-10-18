@@ -17,6 +17,7 @@ class AuthenticationRouter: AuthenticationRouterProtocol {
     let interactor: AuthenticationInteractorProtocol = AuthenticationInteractor()
     let router: AuthenticationRouterProtocol = AuthenticationRouter()
     let presenter: AuthenticationPresenterProtocol = AuthenticationPresenter()
+    let dataManager: AuthenticationAPIDataManagerProtocol = AuthenticationAPIDataManager()
     let navigationController = UINavigationController(rootViewController: view)
     window?.rootViewController = navigationController
     view.presenter = presenter
@@ -24,6 +25,8 @@ class AuthenticationRouter: AuthenticationRouterProtocol {
     presenter.router = router
     presenter.interactor = interactor
     interactor.presenter = presenter
+    interactor.apiDataManager = dataManager
+    dataManager.interactor = interactor
   }
   
   func goToFormModule(from viewController: AnyObject?) {

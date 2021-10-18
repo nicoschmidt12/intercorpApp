@@ -15,30 +15,23 @@ class AuthenticationInteractor: AuthenticationInteractorProtocol {
   // MARK: - Protocol properties
   
   weak var presenter: AuthenticationPresenterProtocol?
+  var apiDataManager: AuthenticationAPIDataManagerProtocol?
   
   // MARK: - Functions
   
   func loginWithFacebook(viewController: UIViewController) {
-    let loginManager = LoginManager()
-    loginManager.logOut()
-    loginManager.logIn(permissions: [.email], viewController: viewController) { (Result) in
-      switch Result {
-        // When the service is success, we call Form Module
-      case .success(granted: _, declined: _, token: let token):
-        let credential = FacebookAuthProvider.credential(withAccessToken: token?.tokenString ?? String())
-        Auth.auth().signIn(with: credential) { result, error in
-          self.presenter?.goToFormModule()
-        }
-        // When the service is cancelled, we don't do nothing
-      case .cancelled:
-        break
-        // When the service failed, the popup is called
-      case .failed(_):
-        self.presenter?.callToPopup()
-        break
-      @unknown default:
-        break
-      }
-    }
+    apiDataManager?.loginWithFacebook(viewController: viewController)
+  }
+  
+  func goToFormModule() {
+    presenter?.goToFormModule()
+  }
+  
+  func callToPopup() {
+    presenter?.callToPopup()
+  }
+  
+  func stopAnimationButton() {
+    presenter?.stopAnimatingButton()
   }
 }

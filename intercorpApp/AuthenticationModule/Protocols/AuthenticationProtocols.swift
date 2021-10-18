@@ -13,6 +13,7 @@ protocol AuthenticationViewProtocol: AnyObject {
   
   func showPopup()
   func goToFormModule()
+  func stopAnimatingButton()
 }
 
 protocol AuthenticationRouterProtocol: AnyObject {
@@ -28,10 +29,21 @@ protocol AuthenticationPresenterProtocol: AnyObject {
   func loginWithFacebook(viewController: UIViewController)
   func goToFormModule()
   func callToPopup()
+  func stopAnimatingButton()
 }
 
 protocol AuthenticationInteractorProtocol: AnyObject {
   var presenter: AuthenticationPresenterProtocol? { get set }
+  var apiDataManager: AuthenticationAPIDataManagerProtocol? { get set }
+  
+  func loginWithFacebook(viewController: UIViewController)
+  func goToFormModule()
+  func stopAnimationButton()
+  func callToPopup()
+}
+
+protocol AuthenticationAPIDataManagerProtocol: AnyObject {
+  var interactor: AuthenticationInteractorProtocol? { get set }
   
   func loginWithFacebook(viewController: UIViewController)
 }

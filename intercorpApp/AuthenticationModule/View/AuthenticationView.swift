@@ -35,6 +35,7 @@ class AuthenticationView: UIViewController, AuthenticationViewProtocol {
   
   private func setupFacebookButton() {
     facebookButton.center = view.center
+    facebookButton.layer.cornerRadius = CGFloat(constants.facebookCornerRadius)
     facebookButton.backgroundColor = UIColor(
       red: constants.rgbRed,
       green: constants.rgbGreen,
@@ -67,6 +68,12 @@ class AuthenticationView: UIViewController, AuthenticationViewProtocol {
           self.presenter?.router?.goToFormModule(from: self)
         }
       }
+    }
+  }
+  
+  func stopAnimatingButton() {
+    DispatchQueue.main.async {
+      self.facebookButton.stopAnimation(animationStyle: .normal, revertAfterDelay: 1)
     }
   }
   

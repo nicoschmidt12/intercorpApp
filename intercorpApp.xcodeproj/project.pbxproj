@@ -12,6 +12,7 @@
 		A30363D5271A21F70000A5A4 /* AuthenticationPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D4271A21F70000A5A4 /* AuthenticationPresenter.swift */; };
 		A30363D7271A22060000A5A4 /* AuthenticationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D6271A22060000A5A4 /* AuthenticationRouter.swift */; };
 		A30363D9271A223D0000A5A4 /* AuthenticationProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A30363D8271A223D0000A5A4 /* AuthenticationProtocols.swift */; };
+		A37DA0EA271CE034004F90D4 /* AuthenticationAPIDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A37DA0E9271CE034004F90D4 /* AuthenticationAPIDataManager.swift */; };
 		A3820347271CAB8E0057428A /* PopupMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3820346271CAB8E0057428A /* PopupMessage.swift */; };
 		A3BAEDBD271A3B7F00444839 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A3BAEDBC271A3B7F00444839 /* GoogleService-Info.plist */; };
 		A3BDF134271A9BB2001150D7 /* IntercorpAppExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3BDF133271A9BB2001150D7 /* IntercorpAppExtensions.swift */; };
@@ -41,6 +42,7 @@
 		A30363D4271A21F70000A5A4 /* AuthenticationPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationPresenter.swift; sourceTree = "<group>"; };
 		A30363D6271A22060000A5A4 /* AuthenticationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationRouter.swift; sourceTree = "<group>"; };
 		A30363D8271A223D0000A5A4 /* AuthenticationProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationProtocols.swift; sourceTree = "<group>"; };
+		A37DA0E9271CE034004F90D4 /* AuthenticationAPIDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationAPIDataManager.swift; sourceTree = "<group>"; };
 		A3820346271CAB8E0057428A /* PopupMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupMessage.swift; sourceTree = "<group>"; };
 		A3BAEDBC271A3B7F00444839 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A3BDF133271A9BB2001150D7 /* IntercorpAppExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntercorpAppExtensions.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A37DA0E8271CE01A004F90D4 /* APIDataManager */ = {
+			isa = PBXGroup;
+			children = (
+				A37DA0E9271CE034004F90D4 /* AuthenticationAPIDataManager.swift */,
+			);
+			path = APIDataManager;
+			sourceTree = "<group>";
+		};
 		A3BDF132271A9B9B001150D7 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +97,7 @@
 		A3BDF135271AAE56001150D7 /* AuthenticationModule */ = {
 			isa = PBXGroup;
 			children = (
+				A37DA0E8271CE01A004F90D4 /* APIDataManager */,
 				A3D20852271A1D78000D3296 /* Protocols */,
 				A3CC8491271A75200080FBAC /* Constants */,
 				A3D20851271A1D73000D3296 /* Router */,
@@ -413,6 +424,7 @@
 			files = (
 				A30363D5271A21F70000A5A4 /* AuthenticationPresenter.swift in Sources */,
 				A30363D7271A22060000A5A4 /* AuthenticationRouter.swift in Sources */,
+				A37DA0EA271CE034004F90D4 /* AuthenticationAPIDataManager.swift in Sources */,
 				A3BDF143271AAFAD001150D7 /* FormPresenter.swift in Sources */,
 				A3BDF13F271AAF9B001150D7 /* FormView.swift in Sources */,
 				A3820347271CAB8E0057428A /* PopupMessage.swift in Sources */,

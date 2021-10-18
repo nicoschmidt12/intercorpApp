@@ -29,4 +29,8 @@ class AuthenticationPresenter: AuthenticationPresenterProtocol {
   func callToPopup() {
     view?.showPopup()
   }
+  
+  func stopAnimatingButton() {
+    view?.stopAnimatingButton()
+  }
 }
