@@ -19,6 +19,7 @@ _Finished_
 * [Xcode 13 and iOS 15]
 * [Firebase Realtime Database]
 * [Facebook API]
+* [Cocoapods]
 
 ## Author ✒️
 
